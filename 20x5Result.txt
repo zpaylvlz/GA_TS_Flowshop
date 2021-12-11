@@ -1,0 +1,32 @@
+Makespan=1278, Iteration=9
+Makespan=1359, Iteration=9
+Makespan=1081, Iteration=13
+Makespan=1293, Iteration=53
+Makespan=1236, Iteration=8
+Makespan=1195, Iteration=8
+Makespan=1239, Iteration=1
+Makespan=1206, Iteration=11
+Makespan=1230, Iteration=12
+Makespan=1108, Iteration=6
+
+Makespan=1278, Iteration=10
+Makespan=1359, Iteration=9
+Makespan=1081, Iteration=12
+Makespan=1293, Iteration=19
+Makespan=1235, Iteration=16
+Makespan=1195, Iteration=9
+Makespan=1239, Iteration=8
+Makespan=1206, Iteration=13
+Makespan=1230, Iteration=10
+Makespan=1108, Iteration=5
+
+Makespan=1278, Iteration=3
+Makespan=1359, Iteration=4
+Makespan=1081, Iteration=16
+Makespan=1293, Iteration=18
+Makespan=1235, Iteration=24
+Makespan=1195, Iteration=7
+Makespan=1239, Iteration=2
+Makespan=1206, Iteration=4
+Makespan=1230, Iteration=10
+Makespan=1108, Iteration=7

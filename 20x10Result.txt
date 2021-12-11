@@ -1,0 +1,5 @@
+Makespan=1582, Iteration=18
+Makespan=1660, Iteration=999
+Makespan=1500, Iteration=999
+Makespan=1378, Iteration=94
+Makespan=1419, Iteration=20

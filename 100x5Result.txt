@@ -1,0 +1,11 @@
+Makespan=5493, Iteration=5
+Makespan=5268, Iteration=11
+Makespan=5175, Iteration=14
+Makespan=5017, Iteration=999
+Makespan=5250, Iteration=242
+Makespan=5135, Iteration=11
+Makespan=5246, Iteration=13
+Makespan=5100, Iteration=4
+Makespan=5454, Iteration=2
+Makespan=5328, Iteration=12
+
