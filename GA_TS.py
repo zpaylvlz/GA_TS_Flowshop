@@ -170,6 +170,7 @@ def Tabu_Search(sequence):
             if (not(sorted_job_neighbor[n] in tabu_list)):
                 if (sorted_makespan_neighbor[n] < best_makespan):
                     sequence = sorted_job_neighbor[n].copy()
+                    best_makespan = sorted_makespan_neighbor[n]
                 tabu_list.append(current_solution.copy())
                 current_solution = sorted_job_neighbor[n].copy()
                 if (len(tabu_list) > Tabu_list_size):
@@ -235,7 +236,7 @@ while True:
             Mutation(Offspring)
             Offspring_makespan = []
             for i in range(len(Offspring)):
-                Offspring[i] = Tabu_Search(population[i]).copy()
+                Offspring[i] = Tabu_Search(Offspring[i]).copy()
                 Offspring_makespan.append(Makespan(Offspring[i], job_num))
             population, population_makespan = replace(population, population_makespan, Offspring, Offspring_makespan)
             print("Iteration"+ str(j)+ ": Best Job Sequence: " +str(population[0])+ ", Makespan="+ str(population_makespan[0]))
