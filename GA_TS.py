@@ -68,8 +68,8 @@ def Select_Tournament(p):
     return parent
 
 def Mutation(p):
-    for _ in range(num_crossover_2):
-        target = np.random.randint(len(p)) # 任選一個染色體
+    for _ in range(num_mutation):
+        target = np.random.randint(num_crossover_2) # 任選一個染色體
         [j, k] = np.random.choice(job_num, 2) # 任選兩個基因
         p[target][j], p[target][k] = p[target][k], p[target][j] # 此染色體的兩基因互換
         
