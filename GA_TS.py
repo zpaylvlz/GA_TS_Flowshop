@@ -5,7 +5,7 @@ import os
 from matplotlib import colors as mcolors
 
 datastr = input('file:')
-file1 = open(str(datastr)+'data.txt','r')
+file1 = open('input/'+str(datastr)+'data.txt','r')
 
 
 Population_size = 100
@@ -242,13 +242,13 @@ while True:
             print("Iteration"+ str(j)+ ": Best Job Sequence: " +str(population[0])+ ", Makespan="+ str(population_makespan[0]))
             if (population_makespan[0] <= Upper_bound):
                 print("The GA_TS hybird algorithm has reached the upper bound")
-                #fp = open(str(datastr)+"Result.txt", "a")
+                #fp = open('output/'+str(datastr)+"Result.txt", "a")
                 #fp.write("Makespan="+str(population_makespan[0])+", Iteration="+str(j)+"\n")
                 #fp.close()
                 isEarlyStop = True
                 break
         #if (not(isEarlyStop)):
-            #fp = open(str(datastr)+"Result.txt", "a")
+            #fp = open('output/'+str(datastr)+"Result.txt", "a")
             #fp.write("Makespan="+str(population_makespan[0])+", Iteration=999\n")
             #fp.close()
 
@@ -294,7 +294,7 @@ while True:
         
         job_seq = []
 file1.close()
-#fp = open(str(datastr)+"Result.txt", "a")
+#fp = open('output/'+str(datastr)+"Result.txt", "a")
 #fp.write("\n")
 #fp.close()
 os.system("pause")
