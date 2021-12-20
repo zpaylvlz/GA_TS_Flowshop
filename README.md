@@ -6,6 +6,7 @@ Journal of King Saud University - Computer and Information Sciences,
 ISSN 1319-1578,
 https://doi.org/10.1016/j.jksuci.2021.08.025.
 (https://www.sciencedirect.com/science/article/pii/S1319157821002287)
+
 #Implement
 Using Genetic algorithm and Tabu search to solve flowshop problem
 GA: Use to global search
