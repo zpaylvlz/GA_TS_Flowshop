@@ -145,14 +145,16 @@ def Tabu_Search(sequence):
     best_makespan = Makespan(sequence, job_num)
     
     tabu_list = []
-    current_solution = sequence.copy()
+    current_solution = list(sequence.copy())
     for i in range(job_num):
         neighbor_method = list(np.random.randint(2, size=10))#Neighborhood Generation method
         neighbor_list = []#neighbors of a iteration
         neighbor_list_makespan = []# the makespan of neighbor
         for n in range(10):
             [j,k] = np.random.choice(job_num, 2, replace=False)
-            current_neighbor = current_solution.copy()
+            current_neighbor = list(current_solution.copy())
+            #print(type(current_neighbor))
+            #print(type(current_solution))
             if (neighbor_method[n] == 1):#swap method 
                 current_neighbor[j] ^= current_neighbor[k]
                 current_neighbor[k] ^= current_neighbor[j]
@@ -225,6 +227,7 @@ while True:
     if (data_count == machine + 3):#After reading job processing time from file
         data_count = 0
         population = Partial_Opposed_based(population)
+        #print(type(population))
         population_makespan = []
         np.random.seed(int(time.time()))
         for i in range(len(population)):
